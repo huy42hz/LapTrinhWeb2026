@@ -87,14 +87,16 @@ namespace SV22T1020158.DataLayers.SQLServer
             if (input.SupplierID > 0)
                 where += " AND P.SupplierID = @SupplierID ";
 
-            if (input.MinPrice > 0)
+            // ==================== SỬA Ở ĐÂY ====================
+            if (input.MinPrice.HasValue && input.MinPrice.Value > 0)
                 where += " AND P.Price >= @MinPrice ";
 
-            if (input.MaxPrice > 0)
+            if (input.MaxPrice.HasValue && input.MaxPrice.Value > 0)
                 where += " AND P.Price <= @MaxPrice ";
+            // ===================================================
 
-            // BƯỚC 4: THÊM LOGIC ĐỊNH NGHĨA CỘT SẮP XẾP TẠI ĐÂY
-            string orderBy = "P.ProductID DESC"; // Mặc định là Mới nhất (ID lớn nhất)
+            // ORDER BY
+            string orderBy = "P.ProductID DESC"; // mặc định mới nhất
             if (!string.IsNullOrEmpty(input.SortOrder))
             {
                 switch (input.SortOrder.ToLower())
@@ -113,37 +115,39 @@ namespace SV22T1020158.DataLayers.SQLServer
             }
 
             string sqlCount = $@"
-                    SELECT COUNT(*)
-                    FROM Products P
-                    {where}";
+                SELECT COUNT(*)
+                FROM Products P
+                {where}";
 
-            // Sửa ORDER BY P.ProductName thành ORDER BY {orderBy}
             string sqlData = $@"
-                    SELECT P.ProductID, P.ProductName, P.Unit, P.Price, P.Photo,
-                            P.CategoryID, P.SupplierID, P.IsSelling,
-                            C.CategoryName, S.SupplierName
-                    FROM Products P
-                    LEFT JOIN Categories C ON P.CategoryID = C.CategoryID
-                    LEFT JOIN Suppliers S ON P.SupplierID = S.SupplierID
-                    {where}
-                    ORDER BY {orderBy} 
-                    OFFSET @offset ROWS
-                    FETCH NEXT @pagesize ROWS ONLY";
+                SELECT P.ProductID, P.ProductName, P.Unit, P.Price, P.Photo,
+                       P.CategoryID, P.SupplierID, P.IsSelling,
+                       C.CategoryName, S.SupplierName
+                FROM Products P
+                LEFT JOIN Categories C ON P.CategoryID = C.CategoryID
+                LEFT JOIN Suppliers S ON P.SupplierID = S.SupplierID
+                {where}
+                ORDER BY {orderBy}
+                OFFSET @offset ROWS
+                FETCH NEXT @pagesize ROWS ONLY";
 
-            var param = new
-            {
-                search = $"%{input.SearchValue}%",
-                input.CategoryID,
-                input.SupplierID,
-                input.MinPrice,
-                input.MaxPrice,
-                offset = (input.Page - 1) * input.PageSize,
-                pagesize = input.PageSize
-            };
+            // Sử dụng DynamicParameters để xử lý optional parameters an toàn
+            var parameters = new DynamicParameters();
+            parameters.Add("@search", $"%{input.SearchValue}%");
+            parameters.Add("@CategoryID", input.CategoryID);
+            parameters.Add("@SupplierID", input.SupplierID);
 
-            int count = await connection.ExecuteScalarAsync<int>(sqlCount, param);
+            if (input.MinPrice.HasValue && input.MinPrice.Value > 0)
+                parameters.Add("@MinPrice", input.MinPrice.Value);
 
-            var data = await connection.QueryAsync<Product>(sqlData, param);
+            if (input.MaxPrice.HasValue && input.MaxPrice.Value > 0)
+                parameters.Add("@MaxPrice", input.MaxPrice.Value);
+
+            parameters.Add("@offset", (input.Page - 1) * input.PageSize);
+            parameters.Add("@pagesize", input.PageSize);
+
+            int count = await connection.ExecuteScalarAsync<int>(sqlCount, parameters);
+            var data = await connection.QueryAsync<Product>(sqlData, parameters);
 
             return new PagedResult<Product>()
             {
