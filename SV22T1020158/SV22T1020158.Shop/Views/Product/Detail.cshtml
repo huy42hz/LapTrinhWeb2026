@@ -1,0 +1,291 @@
+﻿@model SV22T1020158.Models.Catalog.Product
+@{
+    ViewData["Title"] = Model.ProductName;
+    var attributes = ViewBag.Attributes as List<SV22T1020158.Models.Catalog.ProductAttribute>;
+    var photos = ViewBag.Photos as List<SV22T1020158.Models.Catalog.ProductPhoto>;
+}
+
+<style>
+    /* Hệ màu Tech Blue & Purple đồng bộ */
+    :root {
+        --primary-gradient: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+        --accent-blue: #2563eb;
+        --text-dark: #1e293b;
+    }
+
+    .detail-card {
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 20px 40px rgba(30, 58, 138, 0.08);
+        background: #fff;
+    }
+
+    .product-main-img {
+        border-radius: 20px;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        max-height: 450px;
+        object-fit: contain;
+    }
+
+        .product-main-img:hover {
+            transform: scale(1.03);
+        }
+
+    .thumb-container {
+        scrollbar-width: thin;
+        padding-bottom: 10px;
+    }
+
+    .thumb-img {
+        border-radius: 15px;
+        border: 2px solid transparent;
+        transition: all 0.3s;
+        cursor: pointer;
+        object-fit: cover;
+        opacity: 0.7;
+    }
+
+        .thumb-img:hover, .thumb-img.active {
+            border-color: #7c3aed;
+            transform: translateY(-3px);
+            opacity: 1;
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.2);
+        }
+
+    .badge-tech {
+        background: rgba(37, 99, 235, 0.1);
+        color: var(--accent-blue);
+        border: 1px solid rgba(37, 99, 235, 0.2);
+        border-radius: 10px;
+        padding: 6px 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+    }
+
+    .price-text {
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        font-size: 3rem;
+        letter-spacing: -1px;
+    }
+
+    .spec-table-wrapper {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid #f1f5f9;
+        background: #f8fafc;
+    }
+
+    .spec-table th {
+        background-color: #f1f5f9;
+        color: #475569;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    .qty-input-group {
+        background: #f1f5f9;
+        border-radius: 15px;
+        padding: 6px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .qty-btn {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px !important;
+        border: none;
+        background: white;
+        color: var(--text-dark);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        transition: all 0.2s;
+    }
+
+        .qty-btn:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: scale(1.05);
+        }
+
+    .btn-add-cart-tech {
+        background: var(--primary-gradient);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        font-weight: 700;
+        padding: 18px 30px;
+        transition: all 0.4s;
+        box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+        .btn-add-cart-tech:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
+            filter: brightness(1.1);
+            color: white;
+        }
+</style>
+
+<div class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/" class="text-decoration-none">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="/Product" class="text-decoration-none">Sản phẩm</a></li>
+            <li class="breadcrumb-item active fw-bold text-dark">@Model.ProductName</li>
+        </ol>
+    </nav>
+
+    <div class="row g-5">
+        <div class="col-lg-5">
+            <div class="card detail-card p-4 sticky-top" style="top: 100px; z-index: 1;">
+                <div class="text-center mb-4">
+                    <img id="mainImage" src="~/images/products/@(string.IsNullOrEmpty(Model.Photo) ? "nophoto.png" : Model.Photo)"
+                         class="img-fluid product-main-img" alt="@Model.ProductName">
+                </div>
+
+                @if (photos != null && photos.Any())
+                {
+                    <div class="thumb-container d-flex gap-3 overflow-auto justify-content-center">
+                        <img src="~/images/products/@(string.IsNullOrEmpty(Model.Photo) ? "nophoto.png" : Model.Photo)"
+                             class="thumb-img active" style="width:75px; height:75px;"
+                             onclick="changeMainImg(this, '/images/products/@(string.IsNullOrEmpty(Model.Photo) ? "nophoto.png" : Model.Photo)')" />
+
+                        @foreach (var photo in photos.Where(p => !p.IsHidden))
+                        {
+                            <img src="~/images/products/@photo.Photo"
+                                 class="thumb-img" style="width:75px; height:75px;"
+                                 onclick="changeMainImg(this, '/images/products/@photo.Photo')" />
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="ps-lg-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <span class="badge badge-tech">@Model.CategoryName</span>
+                    <span class="text-muted small fw-medium"><i class="bi bi-patch-check-fill text-primary"></i> @Model.SupplierName</span>
+                </div>
+
+                <h1 class="display-5 fw-extrabold mb-4" style="color: var(--text-dark); letter-spacing: -1.5px;">@Model.ProductName</h1>
+
+                <div class="d-flex align-items-baseline gap-3 mb-4">
+                    <span class="price-text">@Model.Price.ToString("#,##0")</span>
+                    <span class="fs-4 text-muted fw-light">VNĐ / @Model.Unit</span>
+                </div>
+
+                <div class="mb-5">
+                    <h6 class="fw-bold text-uppercase small text-primary mb-3" style="letter-spacing: 1px;">Giới thiệu sản phẩm</h6>
+                    <p class="text-secondary fs-5 lh-lg">@Model.ProductDescription</p>
+                </div>
+
+                @if (attributes != null && attributes.Any())
+                {
+                    <div class="mb-5">
+                        <h6 class="fw-bold text-uppercase small text-primary mb-3" style="letter-spacing: 1px;">Thông số kỹ thuật</h6>
+                        <div class="spec-table-wrapper shadow-sm">
+                            <table class="table table-borderless mb-0 spec-table">
+                                @foreach (var attr in attributes.OrderBy(a => a.DisplayOrder))
+                                {
+                                    <tr class="border-bottom" style="border-color: #f1f5f9 !important;">
+                                        <th class="ps-4 py-3" style="width:35%">@attr.AttributeName</th>
+                                        <td class="py-3 text-dark fw-medium">@attr.AttributeValue</td>
+                                    </tr>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                }
+
+                <div class="card border-0 rounded-4 p-4 shadow-sm" style="background: #f8fafc; border: 1px solid #e2e8f0 !important;">
+                    <div class="row align-items-end g-3">
+                        <div class="col-md-4">
+                            <label class="small fw-extrabold text-muted d-block mb-2 text-uppercase" style="letter-spacing: 0.5px;">Số lượng</label>
+                            <div class="qty-input-group">
+                                <button class="qty-btn" type="button" onclick="updateQty(-1)"><i class="bi bi-dash-lg"></i></button>
+                                <input type="number" id="quantity" class="form-control border-0 bg-transparent text-center fw-bold fs-5"
+                                       value="1" min="1" readonly style="width: 70px; color: var(--text-dark);">
+                                <button class="qty-btn" type="button" onclick="updateQty(1)"><i class="bi bi-plus-lg"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <button class="btn btn-add-cart-tech w-100 fs-5" onclick="handleAddToCart()">
+                                <i class="bi bi-cart-plus-fill"></i> THÊM VÀO GIỎ HÀNG
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex gap-4">
+                    <div class="small text-muted"><i class="bi bi-truck me-1"></i> Miễn phí vận chuyển</div>
+                    <div class="small text-muted"><i class="bi bi-shield-check me-1"></i> Bảo hành 12 tháng</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function changeMainImg(el, src) {
+            $('#mainImage').fadeOut(200, function() {
+                $(this).attr('src', src).fadeIn(200);
+            });
+            $('.thumb-img').removeClass('active');
+            $(el).addClass('active');
+        }
+
+        function updateQty(val) {
+            let qtyInput = $('#quantity');
+            let currentVal = parseInt(qtyInput.val());
+            let newVal = currentVal + val;
+            if (newVal >= 1) qtyInput.val(newVal);
+        }
+
+        function handleAddToCart() {
+            var productId = @Model.ProductID;
+            var quantity = $('#quantity').val();
+
+            // Hiệu ứng loading trên nút
+            let btn = $('.btn-add-cart-tech');
+            let originalContent = btn.html();
+            btn.html('<span class="spinner-border spinner-border-sm" role="status"></span> Đang xử lý...').prop('disabled', true);
+
+            $.post('@Url.Action("AddToCart", "Cart")', { productId: productId, quantity: quantity })
+                .done(function(response) {
+                    if (response.success) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Tuyệt vời!',
+                            text: 'Sản phẩm đã được thêm vào giỏ hàng',
+                            timer: 2000,
+                            showConfirmButton: false,
+                            toast: true,
+                            position: 'top-end'
+                        });
+                        // Cập nhật số lượng giỏ hàng trên Header (nếu có)
+                        if(typeof updateCartCount === "function") updateCartCount();
+                        else if($('#cartCount').length) $('#cartCount').text(response.cartCount);
+                    } else {
+                        Swal.fire('Thông báo', response.message, 'warning');
+                    }
+                })
+                .fail(function() {
+                    Swal.fire('Lỗi', 'Không thể kết nối máy chủ', 'error');
+                })
+                .always(function() {
+                    btn.html(originalContent).prop('disabled', false);
+                });
+        }
+    </script>
+}

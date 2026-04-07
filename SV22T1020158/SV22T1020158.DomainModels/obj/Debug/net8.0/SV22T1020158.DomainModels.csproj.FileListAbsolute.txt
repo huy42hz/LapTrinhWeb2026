@@ -1,0 +1,11 @@
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\bin\Debug\net8.0\SV22T1020158.DomainModels.deps.json
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\bin\Debug\net8.0\SV22T1020158.DomainModels.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\bin\Debug\net8.0\SV22T1020158.DomainModels.pdb
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\SV22T1020158.DomainModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\SV22T1020158.DomainModels.AssemblyInfoInputs.cache
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\SV22T1020158.DomainModels.AssemblyInfo.cs
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\SV22T1020158.DomainModels.csproj.CoreCompileInputs.cache
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\SV22T1020158.DomainModels.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\refint\SV22T1020158.DomainModels.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\SV22T1020158.DomainModels.pdb
+F:\THAYPHONG\SV22T1020158\SV22T1020158.DomainModels\obj\Debug\net8.0\ref\SV22T1020158.DomainModels.dll

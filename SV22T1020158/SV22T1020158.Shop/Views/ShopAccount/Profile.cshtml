@@ -1,0 +1,192 @@
+﻿
+@model SV22T1020158.Shop.Models.UpdateProfileViewModel
+@{
+    ViewData["Title"] = "Thông tin cá nhân";
+    Layout = "_Layout";
+}
+
+<style>
+    /* Sidebar Navigation */
+    .profile-sidebar {
+        border-radius: 20px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 10px 30px rgba(30, 58, 138, 0.05);
+    }
+
+        .profile-sidebar .list-group-item {
+            border: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            color: #475569;
+            transition: all 0.3s;
+        }
+
+            .profile-sidebar .list-group-item i {
+                margin-right: 10px;
+                font-size: 1.1rem;
+            }
+
+            .profile-sidebar .list-group-item.active {
+                background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+                color: white;
+            }
+
+            .profile-sidebar .list-group-item:hover:not(.active) {
+                background-color: #f8fafc;
+                color: #7c3aed;
+                padding-left: 25px;
+            }
+
+    /* Content Card */
+    .profile-card {
+        border-radius: 25px;
+        border: none;
+        box-shadow: 0 15px 35px rgba(30, 58, 138, 0.08);
+    }
+
+        .profile-card .card-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            border-radius: 25px 25px 0 0 !important;
+            padding: 20px;
+        }
+
+    /* Form Styling */
+    .form-label {
+        font-weight: 700;
+        color: #1e293b;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+
+    .form-control, .form-select {
+        border-radius: 12px;
+        padding: 12px 15px;
+        border: 1px solid #e2e8f0;
+        background-color: #f8fafc;
+        transition: all 0.3s;
+    }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #fff;
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+        }
+
+    .btn-update-tech {
+        background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        font-weight: 700;
+        padding: 12px 30px;
+        transition: all 0.3s;
+        box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+    }
+
+        .btn-update-tech:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(124, 58, 237, 0.35);
+            color: white;
+            filter: brightness(1.1);
+        }
+</style>
+
+<div class="container py-4">
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-4">
+            <div class="card profile-sidebar">
+                <div class="text-center p-4 border-bottom bg-light">
+                    <div class="avatar-placeholder mb-3 mx-auto d-flex align-items-center justify-content-center rounded-circle shadow-sm"
+                         style="width: 80px; height: 80px; background: white; color: #7c3aed;">
+                        <i class="bi bi-person-fill fs-1"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0 text-dark">@Model.CustomerName</h6>
+                    <small class="text-muted">Khách hàng thành viên</small>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="@Url.Action("Profile")" class="list-group-item list-group-item-action active">
+                        <i class="bi bi-person-badge"></i> Thông tin cá nhân
+                    </a>
+                    <a href="@Url.Action("ChangePassword")" class="list-group-item list-group-item-action">
+                        <i class="bi bi-shield-lock"></i> Đổi mật khẩu
+                    </a>
+                    <a href="@Url.Action("Index", "Order")" class="list-group-item list-group-item-action">
+                        <i class="bi bi-box-seam"></i> Đơn hàng của tôi
+                    </a>
+                    <a href="@Url.Action("Logout", "Account")" class="list-group-item list-group-item-action text-danger">
+                        <i class="bi bi-box-arrow-right"></i> Đăng xuất
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8">
+            <div class="card profile-card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0 d-flex align-items-center">
+                        <i class="bi bi-pencil-square me-2"></i> Chỉnh sửa hồ sơ
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success border-0 rounded-4 shadow-sm d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+                            <div>@TempData["SuccessMessage"]</div>
+                        </div>
+                    }
+
+                    <form method="post" asp-action="Profile" class="row g-3">
+                        <input type="hidden" asp-for="CustomerID" />
+
+                        <div class="col-md-6">
+                            <label asp-for="CustomerName" class="form-label">Họ và tên</label>
+                            <input asp-for="CustomerName" class="form-control" placeholder="Nhập họ tên..." />
+                            <span asp-validation-for="CustomerName" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label asp-for="Email" class="form-label">Địa chỉ Email</label>
+                            <input asp-for="Email" class="form-control" type="email" placeholder="email@example.com" />
+                            <span asp-validation-for="Email" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label asp-for="ContactName" class="form-label">Tên giao dịch</label>
+                            <input asp-for="ContactName" class="form-control" placeholder="Tên thường dùng..." />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label asp-for="Phone" class="form-label">Số điện thoại</label>
+                            <input asp-for="Phone" class="form-control" placeholder="0xxx..." />
+                        </div>
+
+                        <div class="col-12">
+                            <label asp-for="Province" class="form-label">Tỉnh / Thành phố</label>
+                            <select asp-for="Province" class="form-select shadow-none" asp-items="await SelectListHelper.Provinces()">
+                                <option value="">-- Chọn nơi cư trú --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label asp-for="Address" class="form-label">Địa chỉ chi tiết</label>
+                            <textarea asp-for="Address" class="form-control" rows="3" placeholder="Số nhà, tên đường..."></textarea>
+                        </div>
+
+                        <div class="col-12 mt-4 pt-2">
+                            <button type="submit" class="btn btn-update-tech">
+                                <i class="bi bi-check2-circle me-2"></i> Lưu thay đổi
+                            </button>
+                            <a href="@Url.Action("Index", "Home")" class="btn btn-link text-decoration-none text-muted fw-bold ms-2">Hủy bỏ</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

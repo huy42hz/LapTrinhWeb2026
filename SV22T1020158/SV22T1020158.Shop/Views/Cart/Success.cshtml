@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Đặt hàng thành công - Huy Shop";
+    int orderId = ViewBag.OrderId;
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center animate__animated animate__zoomIn">
+        <div class="col-md-8 col-lg-6 text-center">
+            <div class="card border-0 shadow-lg rounded-5 overflow-hidden">
+                <div class="py-5" style="background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);">
+                    <div class="success-icon-wrap position-relative d-inline-block">
+                        <i class="fa-solid fa-circle-check text-white" style="font-size: 100px; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));"></i>
+                        <div class="position-absolute top-50 start-50 translate-middle rounded-circle border border-white border-2 opacity-25 pulse-ring" style="width: 140px; height: 140px;"></div>
+                    </div>
+                </div>
+
+                <div class="card-body py-5 px-4">
+                    <h2 class="fw-extrabold text-dark mb-3">Đặt hàng thành công!</h2>
+                    <p class="lead text-muted mb-4">Cảm ơn bạn đã tin tưởng và mua sắm tại <span class="text-primary fw-bold">Huy Shop</span>.</p>
+
+                    <div class="bg-light rounded-4 p-4 mb-4 border border-dashed border-primary border-opacity-25">
+                        <span class="text-muted small d-block mb-1 fw-bold text-uppercase">Mã đơn hàng của bạn</span>
+                        <h3 class="text-primary fw-extrabold mb-0" style="letter-spacing: 2px;">#@orderId</h3>
+                    </div>
+
+                    <div class="mb-5 px-lg-5">
+                        <p class="small text-muted">
+                            Hệ thống đã ghi nhận đơn hàng. Chúng tôi sẽ sớm liên hệ với bạn qua số điện thoại đã cung cấp để xác nhận và tiến hành giao hàng.
+                        </p>
+                    </div>
+
+                    <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                        <a href="@Url.Action("Detail", "Order", new { id = orderId })" class="btn btn-outline-primary btn-lg rounded-pill px-4 fw-bold transition-all hover-up">
+                            <i class="fa-solid fa-file-invoice me-2"></i>Chi tiết đơn hàng
+                        </a>
+                        <a href="@Url.Action("Index", "Product")" class="btn btn-primary btn-lg rounded-pill px-4 fw-bold shadow-lg transition-all hover-up border-0"
+                           style="background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);">
+                            <i class="fa-solid fa-bag-shopping me-2"></i>Tiếp tục mua sắm
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-footer bg-light border-0 py-3">
+                    <span class="small text-muted font-italic">Cần hỗ trợ? Gọi ngay <strong class="text-dark">1900 xxxx</strong></span>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="/" class="text-decoration-none text-muted small fw-medium hover-text-primary">
+                    <i class="fa-solid fa-house me-1"></i> Quay về trang chủ
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .fw-extrabold {
+        font-weight: 800;
+    }
+
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+
+    .hover-up:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .hover-text-primary:hover {
+        color: #2563eb !important;
+    }
+
+    /* Hiệu ứng nhịp đập cho vòng tròn trắng */
+    .pulse-ring {
+        animation: pulse-white 2s infinite;
+    }
+
+    @@keyframes pulse-white {
+        0% {
+            transform: translate(-50%, -50%) scale(0.9);
+            opacity: 0.5;
+        }
+
+        100% {
+            transform: translate(-50%, -50%) scale(1.3);
+            opacity: 0;
+        }
+    }
+
+    /* Tùy chỉnh border nét đứt cho box mã đơn */
+    .border-dashed {
+        border-style: dashed !important;
+    }
+</style>

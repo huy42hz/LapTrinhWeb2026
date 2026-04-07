@@ -1,0 +1,227 @@
+﻿
+@{
+    ViewData["Title"] = "Trang chủ - Huy Shop";
+    var featuredProducts = ViewBag.FeaturedProducts as List<Product> ?? new List<Product>();
+    var categories = ViewBag.Categories as List<Category> ?? new List<Category>();
+}
+
+<div class="hero-wrap rounded-5 shadow-lg overflow-hidden position-relative mb-5"
+     style="background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%); min-height: 480px;">
+
+    <div class="position-absolute w-100 h-100" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0); background-size: 24px 24px;"></div>
+
+    <div class="container position-relative py-5 px-5 text-white" style="z-index: 2;">
+        <div class="row align-items-center py-4">
+            <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                <span class="badge bg-white text-primary rounded-pill px-3 py-2 mb-3 fw-bold shadow-sm">
+                    SIÊU PHẨM CÔNG NGHỆ 2026
+                </span>
+                <h1 class="display-3 fw-extrabold mb-4" style="letter-spacing: -2px; line-height: 1.1;">
+                    Mua Sắm <br> <span class="text-warning">Thông Minh</span>
+                </h1>
+                <p class="lead opacity-75 mb-5 fs-5">
+                    Trải nghiệm hệ sinh thái sản phẩm mới nhất với mức giá ưu đãi cực sốc dành riêng cho bạn.
+                </p>
+                <div class="d-flex gap-3">
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-white btn-lg rounded-pill px-5 py-3 fw-bold shadow-lg transition-all hover-up">
+                        Khám phá ngay <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-none d-lg-block animate__animated animate__zoomIn text-center">
+                <div class="promo-img-container">
+                    <img src="~/images/Banner/HMCWShKerkfeNQmYYhE3p7.jpg"
+                         class="img-fluid drop-shadow transition-all hover-scale"
+                         alt="Tech Promo"
+                        
+                         style="max-height: 400px; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));">
+
+                    <div class="promo-badge position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning p-3 shadow-lg">
+                        <span class="text-dark fw-bold small d-block">OFF</span>
+                        <span class="text-dark fw-extrabold fs-5">30%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-title d-flex align-items-end justify-content-between mb-4">
+    <div>
+        <h3 class="fw-bold m-0"><i class="bi bi-grid-3x3-gap-fill text-primary me-2"></i>Danh mục</h3>
+        <div style="width: 50px; height: 3px; background: #2563eb; margin-top: 8px; border-radius: 2px;"></div>
+    </div>
+    <a href="@Url.Action("Index", "Product")" class="text-decoration-none small fw-bold">Xem tất cả <i class="fa-solid fa-chevron-right ms-1"></i></a>
+</div>
+
+<div class="row g-4 mb-5">
+    @foreach (var cat in categories.Take(6))
+    {
+        <div class="col-6 col-md-4 col-lg-2">
+            <a href="@Url.Action("Index", "Product", new { categoryId = cat.CategoryID })" class="text-decoration-none">
+                <div class="cat-card p-4 text-center border-0 shadow-sm transition-all h-100 bg-white rounded-4">
+                    <div class="cat-icon bg-light text-primary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <i class="fa-solid fa-layer-group fs-4"></i>
+                    </div>
+                    <h6 class="fw-bold text-dark mb-0 small text-uppercase">@cat.CategoryName</h6>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+<div class="d-flex align-items-center justify-content-between mb-4">
+    <h3 class="fw-bold mb-0"><i class="fa-solid fa-fire text-danger me-2"></i>Sản phẩm nổi bật</h3>
+    <span class="badge bg-danger rounded-pill px-3 py-1 animate__animated animate__pulse animate__infinite">ĐANG HOT</span>
+</div>
+
+<div class="slider-container d-flex gap-4 overflow-auto pb-4 px-2" style="scrollbar-width: thin;">
+    @foreach (var product in featuredProducts)
+    {
+        <div class="product-item" style="min-width: 280px;">
+            <div class="card h-100 border-0 rounded-4 shadow-sm hover-up bg-white position-relative overflow-hidden">
+                <div class="img-container position-relative overflow-hidden" style="height: 240px; background: #f8fafc;">
+                    <img src="~/images/products/@(string.IsNullOrEmpty(product.Photo) ? "nophoto.png" : product.Photo)"
+                         class="w-100 h-100 object-fit-cover transition-all" alt="@product.ProductName">
+
+                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2">
+                        <button class="btn btn-white btn-icon rounded-circle add-to-cart shadow" data-product-id="@product.ProductID">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                    <h6 class="fw-bold text-dark text-truncate mb-1">@product.ProductName</h6>
+                    <p class="text-muted small text-truncate mb-3 opacity-75">
+                        @(product.ProductDescription?.Length > 60 ? product.ProductDescription.Substring(0, 60) + "..." : product.ProductDescription)
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <span class="text-primary fw-extrabold fs-5">@product.Price.ToString("#,##0") đ</span>
+                        <div class="small text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="@Url.Action("Detail", "Product", new { id = product.ProductID })" class="stretched-link"></a>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    /* CSS Tùy chỉnh */
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+
+    .cat-card:hover {
+        transform: translateY(-5px);
+        background: #2563eb !important;
+    }
+
+        .cat-card:hover h6, .cat-card:hover i {
+            color: white !important;
+        }
+
+    .hover-up:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+        .hover-up:hover img {
+            transform: scale(1.1);
+        }
+
+    .btn-white {
+        background: white;
+        color: #2563eb;
+        border: none;
+    }
+
+        .btn-white:hover {
+            background: #f8fafc;
+            transform: scale(1.05);
+        }
+
+    .img-container .overlay {
+        background: rgba(37, 99, 235, 0.15);
+        opacity: 0;
+        transition: 0.3s;
+        z-index: 2;
+        backdrop-filter: blur(2px);
+    }
+
+    .img-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .btn-icon {
+        width: 45px;
+        height: 45px;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    }
+
+        .btn-icon:hover {
+            transform: scale(1.1);
+        }
+
+    .promo-img-container {
+        animation: floating 6s ease-in-out infinite;
+        position: relative;
+    }
+
+    @@keyframes floating {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .slider-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .slider-container::-webkit-scrollbar-thumb {
+        background: #e2e8f0;
+        border-radius: 10px;
+    }
+</style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function() {
+            $('.add-to-cart').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                let btn = $(this);
+                let productId = btn.data('product-id');
+
+                $.post('@Url.Action("AddToCart", "Cart")', { productId: productId, quantity: 1 })
+                    .done(function(res) {
+                        if (res.success) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Tuyệt vời!',
+                                text: 'Đã thêm vào giỏ hàng thành công',
+                                showConfirmButton: false,
+                                timer: 1500,
+                                toast: true,
+                                position: 'top-end'
+                            });
+                            
+                            if(typeof updateCartCount === "function") updateCartCount();
+                        }
+                    });
+            });
+        });
+    </script>
+}

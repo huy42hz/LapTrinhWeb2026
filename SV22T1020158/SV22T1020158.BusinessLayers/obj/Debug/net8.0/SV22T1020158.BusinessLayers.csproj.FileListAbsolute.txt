@@ -1,0 +1,17 @@
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.csproj.AssemblyReference.cache
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.GeneratedMSBuildEditorConfig.editorconfig
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.AssemblyInfoInputs.cache
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.AssemblyInfo.cs
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.csproj.CoreCompileInputs.cache
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.BusinessLayers.deps.json
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.BusinessLayers.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.BusinessLayers.pdb
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.DataLayers.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.Models.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.DataLayers.pdb
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\bin\Debug\net8.0\SV22T1020158.Models.pdb
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T102.2A69B23A.Up2Date
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\refint\SV22T1020158.BusinessLayers.dll
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\SV22T1020158.BusinessLayers.pdb
+F:\THAYPHONG\SV22T1020158\SV22T1020158.BusinessLayers\obj\Debug\net8.0\ref\SV22T1020158.BusinessLayers.dll

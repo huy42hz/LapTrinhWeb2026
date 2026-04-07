@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Từ chối truy cập";
+    Layout = "_Layout";
+}
+
+<style>
+    .access-denied-container {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .denied-card {
+        border: none;
+        border-radius: 30px;
+        background: white;
+        box-shadow: 0 20px 60px rgba(30, 58, 138, 0.1);
+        overflow: hidden;
+        position: relative;
+    }
+
+      
+        .denied-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #ef4444 0%, #7c3aed 100%);
+        }
+
+    .icon-wrapper {
+        width: 120px;
+        height: 120px;
+        background: rgba(239, 68, 68, 0.05);
+        color: #ef4444;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 25px;
+        font-size: 4rem;
+        animation: pulse-red 2s infinite;
+    }
+
+    @@keyframes pulse-red {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.2);
+        }
+
+        70% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 20px rgba(239, 68, 68, 0);
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+        }
+    }
+
+    .denied-title {
+        font-weight: 900;
+        color: #1e293b;
+        letter-spacing: -1px;
+    }
+
+    .btn-relogin {
+        background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        font-weight: 700;
+        padding: 12px 30px;
+        transition: all 0.3s;
+    }
+
+        .btn-relogin:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(124, 58, 237, 0.25);
+            color: white;
+            filter: brightness(1.1);
+        }
+
+    .btn-home-outline {
+        border: 2px solid #e2e8f0;
+        border-radius: 15px;
+        color: #64748b;
+        font-weight: 700;
+        padding: 12px 30px;
+        transition: all 0.3s;
+    }
+
+        .btn-home-outline:hover {
+            background: #f8fafc;
+            border-color: #94a3b8;
+            color: #1e293b;
+        }
+</style>
+
+<div class="access-denied-container">
+    <div class="col-md-6 col-lg-5">
+        <div class="card denied-card text-center p-5">
+            <div class="card-body">
+                <div class="icon-wrapper">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+
+                <h2 class="denied-title mb-3">TRUY CẬP BỊ TỪ CHỐI</h2>
+
+                <p class="text-secondary mb-4 fs-5 px-lg-4">
+                    Rất tiếc! Tài khoản của bạn không có đủ quyền hạn để xem nội dung này.
+                </p>
+
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-4">
+                    <a href="@Url.Action("Login", "Account")" class="btn btn-relogin shadow-sm">
+                        <i class="bi bi-person-badge me-2"></i> Đổi tài khoản
+                    </a>
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-home-outline">
+                        <i class="bi bi-house-door me-2"></i> Về trang chủ
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center text-muted mt-4 small">
+            Mã lỗi: <strong>403 Forbidden</strong> | HuyShop Security System
+        </p>
+    </div>
+</div>

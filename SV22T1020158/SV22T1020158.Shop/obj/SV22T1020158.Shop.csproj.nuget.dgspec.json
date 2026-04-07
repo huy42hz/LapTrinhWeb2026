@@ -1,0 +1,398 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\SV22T1020158.Shop.csproj": {}
+  },
+  "projects": {
+    "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\SV22T1020158.Admin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\SV22T1020158.Admin.csproj",
+        "projectName": "SV22T1020158.Admin",
+        "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\SV22T1020158.Admin.csproj",
+        "packagesPath": "C:\\Users\\NHAT HUY\\.nuget\\packages\\",
+        "outputPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NHAT HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj"
+              },
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj"
+              },
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj",
+        "projectName": "SV22T1020158.BusinessLayers",
+        "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj",
+        "packagesPath": "C:\\Users\\NHAT HUY\\.nuget\\packages\\",
+        "outputPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NHAT HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj"
+              },
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj",
+        "projectName": "SV22T1020158.DataLayers",
+        "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj",
+        "packagesPath": "C:\\Users\\NHAT HUY\\.nuget\\packages\\",
+        "outputPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NHAT HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj",
+        "projectName": "SV22T1020158.Models",
+        "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj",
+        "packagesPath": "C:\\Users\\NHAT HUY\\.nuget\\packages\\",
+        "outputPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NHAT HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\SV22T1020158.Shop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\SV22T1020158.Shop.csproj",
+        "projectName": "SV22T1020158.Shop",
+        "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\SV22T1020158.Shop.csproj",
+        "packagesPath": "C:\\Users\\NHAT HUY\\.nuget\\packages\\",
+        "outputPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NHAT HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\SV22T1020158.Admin.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\SV22T1020158.Admin.csproj"
+              },
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj"
+              },
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj"
+              },
+              "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj": {
+                "projectPath": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

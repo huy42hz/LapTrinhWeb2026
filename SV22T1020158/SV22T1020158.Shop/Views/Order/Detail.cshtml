@@ -1,0 +1,217 @@
+﻿
+@model SV22T1020158.Models.Sales.OrderViewInfo
+@{
+    ViewData["Title"] = $"Đơn hàng #{Model.OrderID} - Huy Shop";
+    var details = ViewBag.Details as List<SV22T1020158.Models.Sales.OrderDetailViewInfo>;
+    decimal total = details?.Sum(x => x.TotalPrice) ?? 0;
+}
+
+<div class="container py-4">
+    <div class="row g-4">
+        <div class="col-lg-3 animate__animated animate__fadeInLeft">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="list-group list-group-flush p-2">
+                    <a href="@Url.Action("Profile", "ShopAccount")" class="list-group-item list-group-item-action border-0 rounded-3 mb-1 py-3">
+                        <i class="fa-solid fa-user-circle me-2 text-primary"></i>Thông tin cá nhân
+                    </a>
+                    <a href="@Url.Action("ChangePassword", "ShopAccount")" class="list-group-item list-group-item-action border-0 rounded-3 mb-1 py-3">
+                        <i class="fa-solid fa-shield-halved me-2 text-primary"></i>Đổi mật khẩu
+                    </a>
+                    <a href="@Url.Action("Index", "Order")" class="list-group-item list-group-item-action border-0 rounded-3 active py-3 shadow-sm">
+                        <i class="fa-solid fa-box-open me-2"></i>Đơn hàng của tôi
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 animate__animated animate__fadeIn">
+            <div class="card border-0 shadow-sm rounded-4 mb-4 overflow-hidden">
+                <div class="card-header border-0 p-4 d-flex justify-content-between align-items-center" style="background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);">
+                    <h5 class="mb-0 text-white fw-bold"><i class="fa-solid fa-receipt me-2"></i>Chi tiết đơn hàng #@Model.OrderID</h5>
+                    <span class="badge bg-white bg-opacity-20 text-white rounded-pill px-3 py-2 fw-normal">
+                        <i class="fa-regular fa-clock me-1"></i> @Model.OrderTime.ToString("dd/MM/yyyy HH:mm")
+                    </span>
+                </div>
+
+                <div class="card-body p-4">
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success border-0 rounded-4 shadow-sm mb-4 animate__animated animate__shakeX">
+                            <i class="fa-solid fa-circle-check me-2"></i>@TempData["Success"]
+                        </div>
+                    }
+
+                    <div class="order-status-tracker mb-5 py-4 border-bottom">
+                        @{
+                            var statusInt = (int)Model.Status;
+                            // logic trạng thái: 1: Mới, 2: Xác nhận, 3: Đang giao, 4: Thành công
+                        }
+                        <div class="d-flex justify-content-between position-relative">
+                            <div class="status-step @(statusInt >= 1 ? "active" : "")">
+                                <div class="step-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                                <span class="step-label">Mới</span>
+                            </div>
+                            <div class="status-step @(statusInt >= 2 ? "active" : "")">
+                                <div class="step-icon"><i class="fa-solid fa-check-to-slot"></i></div>
+                                <span class="step-label">Xác nhận</span>
+                            </div>
+                            <div class="status-step @(statusInt >= 3 ? "active" : "")">
+                                <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                                <span class="step-label">Đang giao</span>
+                            </div>
+                            <div class="status-step @(statusInt >= 4 ? "active" : "")">
+                                <div class="step-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+                                <span class="step-label">Hoàn tất</span>
+                            </div>
+                            <div class="progress-line bg-light position-absolute w-100" style="top: 20px; z-index: 0; height: 4px;">
+                                <div class="progress-active bg-primary h-100 transition-all" style="width: @(statusInt == 1 ? "0%" : statusInt == 2 ? "33%" : statusInt == 3 ? "66%" : "100%")"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="p-4 rounded-4 bg-light h-100 border border-white shadow-sm">
+                                <h6 class="fw-bold mb-3 text-primary"><i class="fa-solid fa-user me-2"></i>Người đặt hàng</h6>
+                                <p class="mb-1 fw-bold text-dark">@Model.CustomerName</p>
+                                <p class="mb-1 small text-muted"><i class="fa-solid fa-phone me-2"></i>@Model.CustomerPhone</p>
+                                <p class="mb-1 small text-muted"><i class="fa-solid fa-envelope me-2"></i>@Model.CustomerEmail</p>
+                                <p class="mb-0 small text-muted"><i class="fa-solid fa-location-dot me-2"></i>@Model.CustomerAddress</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 rounded-4 bg-primary bg-opacity-10 h-100 border border-primary border-opacity-10 shadow-sm">
+                                <h6 class="fw-bold mb-3 text-primary"><i class="fa-solid fa-truck me-2"></i>Địa chỉ nhận hàng</h6>
+                                <p class="mb-1 fw-bold text-dark">@Model.DeliveryAddress</p>
+                                <p class="mb-3 small text-muted">@Model.DeliveryProvince</p>
+
+                                @if (!string.IsNullOrEmpty(Model.ShipperName))
+                                {
+                                    <div class="d-flex align-items-center p-2 bg-white rounded-3">
+                                        <div class="bg-success rounded-circle p-2 text-white me-2" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                            <i class="fa-solid fa-id-badge small"></i>
+                                        </div>
+                                        <span class="small fw-bold text-success">Shipper: @Model.ShipperName - @Model.ShipperPhone</span>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 class="fw-bold mb-3 d-flex align-items-center">
+                        <i class="fa-solid fa-box-open text-primary me-2"></i>Kiện hàng
+                        <span class="ms-auto badge bg-light text-dark fw-normal border">@details?.Count sản phẩm</span>
+                    </h6>
+                    <div class="table-responsive rounded-4 border overflow-hidden mb-4">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="bg-light">
+                                <tr class="small text-muted fw-bold">
+                                    <th class="ps-4">SẢN PHẨM</th>
+                                    <th class="text-center">ĐVT</th>
+                                    <th class="text-center">SỐ LƯỢNG</th>
+                                    <th class="text-end pe-4">THÀNH TIỀN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in details)
+                                {
+                                    <tr>
+                                        <td class="ps-4 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/images/products/@(string.IsNullOrEmpty(item.Photo) ? "nophoto.png" : item.Photo)"
+                                                     class="rounded-3 shadow-sm border me-3"
+                                                     style="width: 50px; height: 50px; object-fit: cover;">
+                                                <span class="fw-bold small text-dark">@item.ProductName</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center small">@item.Unit</td>
+                                        <td class="text-center small">@item.Quantity</td>
+                                        <td class="text-end pe-4 fw-bold">@item.TotalPrice.ToString("#,##0") đ</td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot class="bg-light">
+                                <tr>
+                                    <th colspan="3" class="text-end py-3">Tổng giá trị đơn hàng:</th>
+                                    <th class="text-end pe-4 py-3 text-primary fs-5 fw-extrabold">@total.ToString("#,##0") đ</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-top">
+                        <a href="@Url.Action("Index")" class="btn btn-link text-decoration-none text-muted fw-bold">
+                            <i class="fa-solid fa-chevron-left me-2"></i>Trở lại danh sách
+                        </a>
+
+                        @if (Model.Status == OrderStatusEnum.New)
+                        {
+                           
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .fw-extrabold {
+        font-weight: 800;
+    }
+
+    .transition-all {
+        transition: all 0.4s ease-in-out;
+    }
+
+    .hover-up:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Custom Status Tracker */
+    .order-status-tracker {
+        position: relative;
+    }
+
+    .status-step {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        width: 80px;
+    }
+
+    .step-icon {
+        width: 44px;
+        height: 44px;
+        background: #fff;
+        border: 3px solid #e2e8f0;
+        border-radius: 50%;
+        line-height: 38px;
+        margin: 0 auto 8px;
+        color: #94a3b8;
+        transition: 0.3s;
+    }
+
+    .status-step.active .step-icon {
+        background: #2563eb;
+        border-color: #2563eb;
+        color: #fff;
+        box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+    }
+
+    .step-label {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #94a3b8;
+    }
+
+    .status-step.active .step-label {
+        color: #2563eb;
+    }
+
+    .list-group-item.active {
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
+        border: none !important;
+    }
+</style>

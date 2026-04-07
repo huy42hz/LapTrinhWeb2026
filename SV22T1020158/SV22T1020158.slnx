@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Applications/">
+    <Project Path="SV22T1020158.Admin/SV22T1020158.Admin.csproj" />
+    <Project Path="SV22T1020158.Shop/SV22T1020158.Shop.csproj" />
+  </Folder>
+  <Folder Name="/Libraries/">
+    <Project Path="SV22T1020158.BusinessLayers/SV22T1020158.BusinessLayers.csproj" />
+    <Project Path="SV22T1020158.DataLayers/SV22T1020158.DataLayers.csproj" Id="5a3cab56-ac67-4a2d-aa89-e91ed9915a30" />
+    <Project Path="SV22T1020158.Models/SV22T1020158.Models.csproj" />
+  </Folder>
+</Solution>
