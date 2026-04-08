@@ -154,3 +154,5 @@ F:\THAYPHONG\SV22T1020158\SV22T1020158.Admin\obj\Debug\net8.0\staticwebassets.bu
 F:\THAYPHONG\SV22T1020158\SV22T1020158.Admin\obj\Debug\net8.0\staticwebassets.build.json
 F:\THAYPHONG\SV22T1020158\SV22T1020158.Admin\obj\Debug\net8.0\staticwebassets.build.json
 F:\THAYPHONG\SV22T1020158\SV22T1020158.Admin\obj\Debug\net8.0\staticwebassets.build.json
+F:\THAYPHONG\SV22T1020158\SV22T1020158.Admin\obj\Debug\net8.0\staticwebassets.build.json
+F:\THAYPHONG\SV22T1020158\SV22T1020158.Admin\obj\Debug\net8.0\staticwebassets.build.json

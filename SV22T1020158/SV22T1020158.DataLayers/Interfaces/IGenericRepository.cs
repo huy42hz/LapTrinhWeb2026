@@ -26,7 +26,7 @@ namespace SV22T1020158.DataLayers.Interfaces
         /// <param name="data">Dữ liệu cần bổ sung</param>
         /// <returns>Mã của dòng dữ liệu được bổ sung (thường là IDENTITY)</returns>
         Task<int> AddAsync(T data);
-        /// <summary>
+        /// <summary> 
         /// Cập nhật một bản ghi trong bảng của CSDL
         /// </summary>
         /// <param name="data">Dữ liệu cần cập nhật</param>

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "F:\\THAYPHONG\\SV22T1020158\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|f:\\thayphong\\sv22t1020158\\sv22t1020158.admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|solutionrelative:sv22t1020158.admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A3CAB56-AC67-4A2D-AA89-E91ED9915A30}|SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj|f:\\thayphong\\sv22t1020158\\sv22t1020158.datalayers\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A3CAB56-AC67-4A2D-AA89-E91ED9915A30}|SV22T1020158.DataLayers\\SV22T1020158.DataLayers.csproj|solutionrelative:sv22t1020158.datalayers\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -634,10 +638,6 @@
       "RelativeMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|solutionrelative:sv22t1020158.admin\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|f:\\thayphong\\sv22t1020158\\sv22t1020158.admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|solutionrelative:sv22t1020158.admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|f:\\thayphong\\sv22t1020158\\sv22t1020158.admin\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29576389-4F43-68C4-49AD-4851F2E84A9D}|SV22T1020158.Admin\\SV22T1020158.Admin.csproj|solutionrelative:sv22t1020158.admin\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -716,24 +716,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 117,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\Interfaces\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\Interfaces\\IGenericRepository.cs",
               "ToolTip": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\Interfaces\\IGenericRepository.cs",
               "RelativeToolTip": "SV22T1020158.DataLayers\\Interfaces\\IGenericRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T07:49:20.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PaginationSearchViewModel.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Common\\PaginationSearchViewModel.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Common\\PaginationSearchViewModel.cs",
@@ -745,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\ProductRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\ProductRepository.cs",
@@ -753,12 +753,11 @@
               "RelativeToolTip": "SV22T1020158.DataLayers\\SQLServer\\ProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T04:03:05.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T04:03:05.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\Interfaces\\IProductRepository.cs",
@@ -770,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ApiResult.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\AppCodes\\ApiResult.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\AppCodes\\ApiResult.cs",
@@ -782,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\AppCodes\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\AppCodes\\ApplicationContext.cs",
@@ -794,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PageItem.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Common\\PageItem.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Common\\PageItem.cs",
@@ -806,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PaginationSearchInput.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Common\\PaginationSearchInput.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Common\\PaginationSearchInput.cs",
@@ -818,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\CategoryController.cs",
@@ -830,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "AccountController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\AccountController.cs",
@@ -842,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Shop\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Shop\\RegisterViewModel.cs",
@@ -854,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductSearchViewModel.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Shop\\ProductSearchViewModel.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Shop\\ProductSearchViewModel.cs",
@@ -866,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 96,
               "Title": "Animate.css",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\wwwroot\\css\\Animate.css",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\wwwroot\\css\\Animate.css",
@@ -878,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Product\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Product\\Search.cshtml",
@@ -890,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "_LayoutEmpty.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_LayoutEmpty.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_LayoutEmpty.cshtml",
@@ -902,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\ShopAccount\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\ShopAccount\\AccessDenied.cshtml",
@@ -914,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ShopAccountController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Controllers\\ShopAccountController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Controllers\\ShopAccountController.cs",
@@ -926,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "_Footer.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_Footer.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_Footer.cshtml",
@@ -938,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Order\\Detail.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Order\\Detail.cshtml",
@@ -950,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Order\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Order\\Index.cshtml",
@@ -962,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Success.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Cart\\Success.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Cart\\Success.cshtml",
@@ -974,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Cart\\Checkout.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Cart\\Checkout.cshtml",
@@ -986,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Cart\\Index.cshtml",
@@ -998,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Product\\Detail.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Product\\Detail.cshtml",
@@ -1010,7 +1009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Product\\Index.cshtml",
@@ -1022,7 +1021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\ShopAccount\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\ShopAccount\\ChangePassword.cshtml",
@@ -1034,7 +1033,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\ShopAccount\\Profile.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\ShopAccount\\Profile.cshtml",
@@ -1046,7 +1045,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Login.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\ShopAccount\\Login.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\ShopAccount\\Login.cshtml",
@@ -1058,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Register.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\ShopAccount\\Register.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\ShopAccount\\Register.cshtml",
@@ -1070,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "OrderController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Controllers\\OrderController.cs",
@@ -1082,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CartController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Controllers\\CartController.cs",
@@ -1094,7 +1093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 97,
               "Title": "ProductController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Controllers\\ProductController.cs",
@@ -1106,7 +1105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 109,
               "Title": "site.js",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\wwwroot\\js\\site.js",
@@ -1118,7 +1117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\ShopHome\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\ShopHome\\Index.cshtml",
@@ -1130,7 +1129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "_Header.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_Header.cshtml",
@@ -1142,7 +1141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 100,
               "Title": "ShopHomeController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Controllers\\ShopHomeController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Controllers\\ShopHomeController.cs",
@@ -1154,7 +1153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "SV22T1020158.Admin.csproj",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\SV22T1020158.Admin.csproj",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\SV22T1020158.Admin.csproj",
@@ -1166,7 +1165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\appsettings.json",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\appsettings.json",
@@ -1178,7 +1177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\appsettings.Development.json",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\appsettings.Development.json",
@@ -1190,7 +1189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 112,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\_ViewStart.cshtml",
@@ -1202,7 +1201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\_ViewImports.cshtml",
@@ -1214,7 +1213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 98,
               "Title": "Error.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\Error.cshtml",
@@ -1226,7 +1225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 99,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -1238,7 +1237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_Layout.cshtml.css",
@@ -1250,7 +1249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_Layout.cshtml",
@@ -1262,7 +1261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Home\\Privacy.cshtml",
@@ -1274,7 +1273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Home\\Index.cshtml",
@@ -1286,7 +1285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 114,
               "Title": "libman.json",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\libman.json",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\libman.json",
@@ -1298,7 +1297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_Layout.cshtml.css",
@@ -1310,7 +1309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 135,
               "Title": "DeleteDetail.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\DeleteDetail.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\DeleteDetail.cshtml",
@@ -1334,7 +1333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ShoppingCartService.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\AppCodes\\ShoppingCartService.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\AppCodes\\ShoppingCartService.cs",
@@ -1346,7 +1345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\BaseRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\BaseRepository.cs",
@@ -1358,7 +1357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "SalesDataService.cs.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SalesDataService.cs.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\SalesDataService.cs.cs",
@@ -1370,7 +1369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "CommonDataService.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\CommonDataService.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\CommonDataService.cs",
@@ -1382,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CatalogDataService.cs.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\CatalogDataService.cs.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\CatalogDataService.cs.cs",
@@ -1394,7 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 111,
               "Title": "site.css",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\wwwroot\\css\\site.css",
@@ -1406,7 +1405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 106,
               "Title": "SV22T1020158.BusinessLayers.csproj",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\SV22T1020158.BusinessLayers.csproj",
@@ -1418,7 +1417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 133,
               "Title": "EditDetail.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\EditDetail.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\EditDetail.cshtml",
@@ -1430,7 +1429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 113,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -1440,7 +1439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 110,
               "Title": "shop.js",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\wwwroot\\js\\shop.js",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\wwwroot\\js\\shop.js",
@@ -1452,7 +1451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 102,
               "Title": "shop.css",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\wwwroot\\css\\shop.css",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\wwwroot\\css\\shop.css",
@@ -1530,7 +1529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "_ShopLayout.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Views\\Shared\\_ShopLayout.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Views\\Shared\\_ShopLayout.cshtml",
@@ -1542,7 +1541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "ResetPasswordModel.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Security\\ResetPasswordModel.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Security\\ResetPasswordModel.cs",
@@ -1554,7 +1553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "OrderSearchInfo.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Sales\\OrderSearchInfo.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Sales\\OrderSearchInfo.cs",
@@ -1566,7 +1565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "SecurityDataService.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\SecurityDataService.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\SecurityDataService.cs",
@@ -1578,7 +1577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 95,
               "Title": "SV22T1020158.Models.csproj",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\SV22T1020158.Models.csproj",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\SV22T1020158.Models.csproj",
@@ -1590,7 +1589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 126,
               "Title": "ShowCart.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\ShowCart.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\ShowCart.cshtml",
@@ -1602,7 +1601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 128,
               "Title": "SearchProduct.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\SearchProduct.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\SearchProduct.cshtml",
@@ -1614,7 +1613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "ShoppingCartHelper.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\AppCodes\\ShoppingCartHelper.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\AppCodes\\ShoppingCartHelper.cs",
@@ -1626,7 +1625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\Search.cshtml",
@@ -1638,7 +1637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 115,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\_ViewStart.cshtml",
@@ -1650,7 +1649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "Error.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\Error.cshtml",
@@ -1662,7 +1661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "_Sidebar.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_Sidebar.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_Sidebar.cshtml",
@@ -1674,7 +1673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "_Footer.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_Footer.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_Footer.cshtml",
@@ -1686,7 +1685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 127,
               "Title": "Shipping.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Shipping.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Shipping.cshtml",
@@ -1698,7 +1697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 129,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Search.cshtml",
@@ -1710,7 +1709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 130,
               "Title": "Reject.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Reject.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Reject.cshtml",
@@ -1722,7 +1721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 131,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Index.cshtml",
@@ -1734,7 +1733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 132,
               "Title": "Finish.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Finish.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Finish.cshtml",
@@ -1746,7 +1745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 134,
               "Title": "EditCartItem.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\EditCartItem.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\EditCartItem.cshtml",
@@ -1758,7 +1757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 104,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Edit.cshtml",
@@ -1770,7 +1769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Detail.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Detail.cshtml",
@@ -1782,7 +1781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 136,
               "Title": "DeleteCartItem.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\DeleteCartItem.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\DeleteCartItem.cshtml",
@@ -1794,7 +1793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 137,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Delete.cshtml",
@@ -1806,7 +1805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 138,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\Create.cshtml",
@@ -1818,7 +1817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 139,
               "Title": "ClearCart.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Order\\ClearCart.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Order\\ClearCart.cshtml",
@@ -1830,7 +1829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 140,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Home\\Privacy.cshtml",
@@ -1842,7 +1841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 141,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Home\\Index.cshtml",
@@ -1854,7 +1853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 158,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Account\\Logout.cshtml",
@@ -1866,7 +1865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "UserAccount.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Security\\UserAccount.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Security\\UserAccount.cs",
@@ -1890,7 +1889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "OrderStatusExtensions.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Sales\\OrderStatusExtensions.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Sales\\OrderStatusExtensions.cs",
@@ -1926,7 +1925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "OrderDetailViewInfo.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Sales\\OrderDetailViewInfo.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Sales\\OrderDetailViewInfo.cs",
@@ -2010,7 +2009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PagedResult.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Common\\PagedResult.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Common\\PagedResult.cs",
@@ -2022,7 +2021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductSearchInput.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Catalog\\ProductSearchInput.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Catalog\\ProductSearchInput.cs",
@@ -2034,7 +2033,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 107,
               "Title": "ProductPhoto.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Catalog\\ProductPhoto.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Catalog\\ProductPhoto.cs",
@@ -2046,7 +2045,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "ProductAttribute.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Catalog\\ProductAttribute.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Catalog\\ProductAttribute.cs",
@@ -2058,7 +2057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\EmployeeRepository.cs",
@@ -2070,7 +2069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "EmployeeAccountRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\EmployeeAccountRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\EmployeeAccountRepository.cs",
@@ -2082,7 +2081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "CustomerAccountRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\CustomerAccountRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\CustomerAccountRepository.cs",
@@ -2094,7 +2093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\CategoryRepository.cs",
@@ -2106,7 +2105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 101,
               "Title": "HomeController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\HomeController.cs",
@@ -2118,19 +2117,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Account\\Login.cshtml",
               "ToolTip": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "SV22T1020158.Admin\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwEEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-23T06:55:53.306Z"
+              "WhenOpened": "2026-03-23T06:55:53.306Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Program.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Program.cs",
@@ -2142,7 +2142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 125,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\Delete.cshtml",
@@ -2154,7 +2154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 108,
               "Title": "Product.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Models\\Catalog\\Product.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Models\\Catalog\\Product.cs",
@@ -2166,7 +2166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 153,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Category\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Category\\Search.cshtml",
@@ -2178,7 +2178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 154,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Category\\Index.cshtml",
@@ -2190,7 +2190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 93,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Supplier\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Supplier\\Delete.cshtml",
@@ -2202,7 +2202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 157,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Category\\Create.cshtml",
@@ -2214,7 +2214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 156,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Category\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Category\\Delete.cshtml",
@@ -2226,7 +2226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 155,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Category\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Category\\Edit.cshtml",
@@ -2238,7 +2238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "OrderController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\OrderController.cs",
@@ -2262,7 +2262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 117,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shipper\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shipper\\Search.cshtml",
@@ -2274,7 +2274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 118,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shipper\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shipper\\Index.cshtml",
@@ -2286,7 +2286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 119,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shipper\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shipper\\Edit.cshtml",
@@ -2298,7 +2298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 121,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shipper\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shipper\\Create.cshtml",
@@ -2310,7 +2310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "ListPhotos.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\ListPhotos.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\ListPhotos.cshtml",
@@ -2322,7 +2322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "ListAttributes.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\ListAttributes.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\ListAttributes.cshtml",
@@ -2334,7 +2334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 122,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\Index.cshtml",
@@ -2346,7 +2346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "EditPhoto.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\EditPhoto.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\EditPhoto.cshtml",
@@ -2358,7 +2358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 123,
               "Title": "EditAttribute.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\EditAttribute.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\EditAttribute.cshtml",
@@ -2370,7 +2370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 124,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\Edit.cshtml",
@@ -2382,7 +2382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 103,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\Detail.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\Detail.cshtml",
@@ -2394,7 +2394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Product\\Create.cshtml",
@@ -2406,7 +2406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 143,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\Index.cshtml",
@@ -2418,7 +2418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 142,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\Search.cshtml",
@@ -2430,7 +2430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 144,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\Edit.cshtml",
@@ -2442,7 +2442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 147,
               "Title": "ChangeRole.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\ChangeRole.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\ChangeRole.cshtml",
@@ -2454,7 +2454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 148,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\ChangePassword.cshtml",
@@ -2466,7 +2466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 145,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\Delete.cshtml",
@@ -2478,7 +2478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 146,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Employee\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Employee\\Create.cshtml",
@@ -2490,7 +2490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "_Appmain.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_Appmain.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_Appmain.cshtml",
@@ -2502,7 +2502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -2514,7 +2514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 91,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Supplier\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Supplier\\Search.cshtml",
@@ -2526,7 +2526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 152,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Customer\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Customer\\Delete.cshtml",
@@ -2538,7 +2538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_Layout.cshtml",
@@ -2550,7 +2550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 105,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Customer\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Customer\\Create.cshtml",
@@ -2562,7 +2562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 92,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Supplier\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Supplier\\Index.cshtml",
@@ -2574,7 +2574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Supplier\\Create.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Supplier\\Create.cshtml",
@@ -2586,7 +2586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 116,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Supplier\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Supplier\\Edit.cshtml",
@@ -2598,7 +2598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\SupplierController.cs",
@@ -2610,7 +2610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 151,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Customer\\Edit.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Customer\\Edit.cshtml",
@@ -2622,7 +2622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 150,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Customer\\Index.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Customer\\Index.cshtml",
@@ -2634,7 +2634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ShipperController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\ShipperController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\ShipperController.cs",
@@ -2646,7 +2646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\EmployeeController.cs",
@@ -2658,7 +2658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "SelectListHelper.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\AppCodes\\SelectListHelper.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\AppCodes\\SelectListHelper.cs",
@@ -2670,7 +2670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ProductController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\ProductController.cs",
@@ -2682,7 +2682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Controllers\\CustomerController.cs",
@@ -2694,7 +2694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.DataLayers\\SQLServer\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "SV22T1020158.DataLayers\\SQLServer\\CustomerRepository.cs",
@@ -2706,7 +2706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "PartnerDataService.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\PartnerDataService.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\PartnerDataService.cs",
@@ -2718,7 +2718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "DictionaryDataService.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\DictionaryDataService.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\DictionaryDataService.cs",
@@ -2730,7 +2730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\_ViewImports.cshtml",
@@ -2742,7 +2742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 149,
               "Title": "Search.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Customer\\Search.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Customer\\Search.cshtml",
@@ -2754,7 +2754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "_Header.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shared\\_Header.cshtml",
@@ -2766,7 +2766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 120,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Admin\\Views\\Shipper\\Delete.cshtml",
               "RelativeDocumentMoniker": "SV22T1020158.Admin\\Views\\Shipper\\Delete.cshtml",
@@ -2778,7 +2778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "HRDataService.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\HRDataService.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\HRDataService.cs",
@@ -2790,7 +2790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "Configuration.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.BusinessLayers\\Configuration.cs",
               "RelativeDocumentMoniker": "SV22T1020158.BusinessLayers\\Configuration.cs",
@@ -2811,7 +2811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 94,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\Program.cs",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\Program.cs",
@@ -2823,7 +2823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "SV22T1020158.Shop.csproj",
               "DocumentMoniker": "F:\\THAYPHONG\\SV22T1020158\\SV22T1020158.Shop\\SV22T1020158.Shop.csproj",
               "RelativeDocumentMoniker": "SV22T1020158.Shop\\SV22T1020158.Shop.csproj",
